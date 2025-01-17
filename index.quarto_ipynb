@@ -1,0 +1,61 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Prediciting Maternal Health Risk\"\n",
+        "author: \"Jia Quan Lim\"\n",
+        "date: \"2025-01-17\"\n",
+        "categories: [blog, analysis]\n",
+        "image: \"image.jpg\"\n",
+        "---\n",
+        "\n",
+        "```{css, echo = FALSE}\n",
+        ".justify {\n",
+        "  text-align: justify !important\n",
+        "}\n",
+        "```\n",
+        "\n",
+        "\n",
+        "\n",
+        "# How Data Science Can Save Lives\n",
+        "\n",
+        "::: {.justify}\n",
+        "\n",
+        "Maternal health remains a critical global issue, especially in the rural and underserved areas where access to healthcare is limited.\n",
+        "High maternal mortality rates are often the result of insufficient monitoring, lack of medical resources, and limited information about maternal care.\n",
+        "With that said, by leveraging data science, we can identify health risks early during pregnancy which could potentially save the lives of mothers and their babies.\n",
+        "This bllog dives into how the data driven methods can predict maternal health risks and highlight the key indicators to facilitate healthcare decisions. \n",
+        "\n",
+        ":::\n",
+        "\n",
+        "# Methods\n",
+        "\n",
+        "In order for us to this issue, we have analysed a dataset that contains health metrics from rural communities. \n",
+        "The dataset was sourced from the Prima Indians Diabetes Database.\n",
+        "It includes the following non-invasive health indicators such as:\n",
+        "- Age: The age of the pregnant woman in years\n",
+        "- Blood Pressure: Both systolic (upper) and diastolic (lower) values in (in mmHg)\n",
+        "- Blood Sugar (BS): Blood glucose levels (in mmol/L)\n",
+        "- Heart Rate: Resting heart rate (in beats per minute)\n",
+        "- Risk Level: The predicted intensity of maternal health risk (high, medium, or low)\n",
+        "\n",
+        "We have tested multiple machine learning models, including Logistic Regression, Support Vector Machines (SVM), Naive Bayes, and Decision Trees.\n",
+        "Our primary goal was to build a predicitve model that is capable of categorizing maternal health risks into three levels (high, medium, low).\n",
+        "Among these models, the Decision Tree stood out for its interpretability and high accuracy.\n"
+      ],
+      "id": "ecac4d26"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

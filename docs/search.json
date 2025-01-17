@@ -21,10 +21,38 @@
     "text": "This is a post with executable code."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Maternal Health",
-    "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 17, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJan 14, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "objectID": "index.html#model-performance",
+    "href": "index.html#model-performance",
+    "title": "Prediciting Maternal Health Risk",
+    "section": "Model Performance",
+    "text": "Model Performance\nIn Figure 1, the Decision Tree model achieved an accuracy of 82% on the training data which outperform other models. It was reported with an accuracy of 84% on the test data which is consistent with its training accuracy. It provided actionable insights and this makes it a suitable choice for healthcare application. The following Figure 2 shows a simplified version of the decision tree:\n\n\n\n\n\n\nFigure 1: Model Training Scores\n\n\n\n\n\n\n\n\n\nFigure 2: Decision Tree"
+  },
+  {
+    "objectID": "index.html#key-indicators",
+    "href": "index.html#key-indicators",
+    "title": "Prediciting Maternal Health Risk",
+    "section": "Key Indicators",
+    "text": "Key Indicators\nThe Decision Tree (Figure 2) has identified that blood sugars levels as the most critical predictor of maternal health risks. Specifically, blood sugar (BS) with a threshold value of 7.95 mmol/L was the primary splitting point in the root node Decision Tree. The Decision tree also suggested that systolic (lower) blood pressure is a key indicator as it was used to refine the classification further on."
+  },
+  {
+    "objectID": "index.html#limitations",
+    "href": "index.html#limitations",
+    "title": "Prediciting Maternal Health Risk",
+    "section": "Limitations",
+    "text": "Limitations\nAlthough the model performed well overall, it has limitations which require careful attention before the actual deployment in the clinical settings. Such limitations can be identified as:\n\nMisclassifications: Some high-risk pregnancies were inccorectly categorised as low risk. This could have severe consequences in the real world scenarios.\nDataset Bias: The dataset has limited diversity which could introduce bias. It primarily includes data from the Pima Indians Diabetes Database, which may not generalize well to broader populations."
+  },
+  {
+    "objectID": "index.html#potential-impact",
+    "href": "index.html#potential-impact",
+    "title": "Prediciting Maternal Health Risk",
+    "section": "Potential Impact",
+    "text": "Potential Impact\nThe ability to predict maternal health risks early can transform healthcare delivery in underserved communities. By having the ability to identify at risk pregnancies, healthcare professionals can prioritize resouces and provide timely interventions to the patients. This will be a vital change especially in rural areas where medical care is often scarce."
+  },
+  {
+    "objectID": "index.html#challenges-in-deployment",
+    "href": "index.html#challenges-in-deployment",
+    "title": "Prediciting Maternal Health Risk",
+    "section": "Challenges in Deployment",
+    "text": "Challenges in Deployment\nData Diversity is one of the key challenges. Future work should involve training models on larger and more diverse datasets to ensure the models can generalise better. Secondly, ethical considerations should be taken seriously. Using machine learning in healthcare requires substantial careful consideration of faireness, accountability and transparency."
   }
 ]

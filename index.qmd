@@ -1,14 +1,87 @@
 ---
-title: "Maternal Health"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+title: "Prediciting Maternal Health Risk"
+author: "Jia Quan Lim"
+date: "2025-01-17"
+categories: [blog, analysis]
+bibliography: references.bib
+format:
+  html:
+    css: styles.css
 ---
 
+![](cover.jpg)
+
+# How Data Science Can Save Lives
+
+Maternal health remains a critical global issue, especially in the rural and underserved areas where access to healthcare is limited.
+High maternal mortality rates are often the result of insufficient monitoring, lack of medical resources, and limited information about maternal care [@maternal_death_causes].
+With that said, by leveraging data science, we can identify health risks early during pregnancy which could potentially save the lives of mothers and their babies.
+This bllog dives into how the data driven methods can predict maternal health risks and highlight the key indicators to facilitate healthcare decisions. 
+
+# Methods
+
+In order for us to this issue, we have analysed a dataset that contains health metrics from rural communities. 
+The dataset was sourced from the Pima Indians Diabetes Database [@Pima_indians_data].
+It includes the following non-invasive health indicators such as:
+
+- **Age:** The age of the pregnant woman in years
+- **Blood Pressure:** Both systolic (upper) and diastolic (lower) values in (in mmHg)
+- **Blood Sugar (BS):** Blood glucose levels (in mmol/L)
+- **Heart Rate:** Resting heart rate (in beats per minute)
+- **Risk Level:** The predicted intensity of maternal health risk (high, medium, or low)
+
+We have tested multiple machine learning models, including Logistic Regression, Support Vector Machines (SVM), Naive Bayes, and Decision Trees.
+Our primary goal was to build a predicitve model that is capable of categorizing maternal health risks into three levels (high, medium, low).
+Among these models, the Decision Tree stood out for its interpretability and high accuracy.
+
+# Results
+
+## Model Performance
+
+In @fig-model_scores, the Decision Tree model achieved an accuracy of 82% on the training data which outperform other models. It was reported with an accuracy of 84% on the test data which is consistent with its training accuracy. 
+It provided actionable insights and this makes it a suitable choice for healthcare application. 
+The following @fig-decision_tree shows a simplified version of the decision tree:
+
+![Model Training Scores](model_scores.png){#fig-model_scores}
+
+![Decision Tree](decision_tree.jpg){#fig-decision_tree}
+
+
+## Key Indicators
+
+The Decision Tree (@fig-decision_tree) has identified that blood sugars levels as the most critical predictor of maternal health risks.
+Specifically, blood sugar (BS) with a threshold value of 7.95 mmol/L was the primary splitting point in the root node Decision Tree.
+The Decision tree also suggested that systolic (lower) blood pressure is a key indicator as it was used to refine the classification further on.
+
+
+
+## Limitations
+
+Although the model performed well overall, it has limitations which require careful attention before the actual deployment in the clinical settings.
+Such limitations can be identified as:
+
+- **Misclassifications:** Some high-risk pregnancies were inccorectly categorised as low risk. This could have severe consequences in the real world scenarios.
+- **Dataset Bias:** The dataset has limited diversity which could introduce bias. It primarily includes data from the Pima Indians Diabetes Database, which may not generalize well to broader populations.
+
+# Real World Implications
+
+## Potential Impact
+
+The ability to predict maternal health risks early can transform healthcare delivery in underserved communities. 
+By having the ability to identify at risk pregnancies, healthcare professionals can prioritize resouces and provide timely interventions to the patients.
+This will be a vital change especially in rural areas where medical care is often scarce.
+
+## Challenges in Deployment
+
+Data Diversity is one of the key challenges. Future work should involve training models on larger and more diverse datasets to ensure the models can generalise better.
+Secondly, ethical considerations should be taken seriously. Using machine learning in healthcare requires substantial careful consideration of faireness, accountability and transparency.
+
+# Conclusion
+Once again, data science has demostrated the potential in addressing critical maternal health challenges. 
+This project highlights how predicitve models like Decision Tree, can identify key risk factors such as blood sugar and systolic (lower) blood pressure to guide healthcare decisions.
+However, it is important to note that further refinement and validation are necessary before deploying the model in the real world settings.
+Collaboration between data scientist and healthcare professionals is another key aspect to unlocking the full potential of data science.
+In a nutshell, by leveraging data driven insights, we have the potential to make a difference toward improving maternal healthcare and save lives.
+
+# References
 

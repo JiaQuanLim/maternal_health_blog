@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jia Quan Lim">
+<meta name="dcterms.date" content="2025-01-17">
 
-<title>Maternal Health</title>
+<title>Prediciting Maternal Health Risk – Maternal Health</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,8 +52,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,73 +88,15 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -157,11 +119,6 @@ window.Quarto = {
 </i> 
 <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -170,118 +127,134 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Maternal Health</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(2)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Prediciting Maternal Health Risk</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">blog</div>
+    <div class="quarto-category">analysis</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jia Quan Lim </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 17, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><img src="cover.jpg" class="img-fluid"></p>
+<section id="how-data-science-can-save-lives" class="level1">
+<h1>How Data Science Can Save Lives</h1>
+<p>Maternal health remains a critical global issue, especially in the rural and underserved areas where access to healthcare is limited. High maternal mortality rates are often the result of insufficient monitoring, lack of medical resources, and limited information about maternal care <span class="citation" data-cites="maternal_death_causes">(<a href="#ref-maternal_death_causes" role="doc-biblioref">Say et al. 2014</a>)</span>. With that said, by leveraging data science, we can identify health risks early during pregnancy which could potentially save the lives of mothers and their babies. This bllog dives into how the data driven methods can predict maternal health risks and highlight the key indicators to facilitate healthcare decisions.</p>
+</section>
+<section id="methods" class="level1">
+<h1>Methods</h1>
+<p>In order for us to this issue, we have analysed a dataset that contains health metrics from rural communities. The dataset was sourced from the Pima Indians Diabetes Database <span class="citation" data-cites="Pima_indians_data">(<a href="#ref-Pima_indians_data" role="doc-biblioref">Brownlee 2024</a>)</span>. It includes the following non-invasive health indicators such as:</p>
+<ul>
+<li><strong>Age:</strong> The age of the pregnant woman in years</li>
+<li><strong>Blood Pressure:</strong> Both systolic (upper) and diastolic (lower) values in (in mmHg)</li>
+<li><strong>Blood Sugar (BS):</strong> Blood glucose levels (in mmol/L)</li>
+<li><strong>Heart Rate:</strong> Resting heart rate (in beats per minute)</li>
+<li><strong>Risk Level:</strong> The predicted intensity of maternal health risk (high, medium, or low)</li>
+</ul>
+<p>We have tested multiple machine learning models, including Logistic Regression, Support Vector Machines (SVM), Naive Bayes, and Decision Trees. Our primary goal was to build a predicitve model that is capable of categorizing maternal health risks into three levels (high, medium, low). Among these models, the Decision Tree stood out for its interpretability and high accuracy.</p>
+</section>
+<section id="results" class="level1">
+<h1>Results</h1>
+<section id="model-performance" class="level2">
+<h2 class="anchored" data-anchor-id="model-performance">Model Performance</h2>
+<p>In <a href="#fig-model_scores" class="quarto-xref">Figure&nbsp;1</a>, the Decision Tree model achieved an accuracy of 82% on the training data which outperform other models. It was reported with an accuracy of 84% on the test data which is consistent with its training accuracy. It provided actionable insights and this makes it a suitable choice for healthcare application. The following <a href="#fig-decision_tree" class="quarto-xref">Figure&nbsp;2</a> shows a simplified version of the decision tree:</p>
+<div id="fig-model_scores" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-model_scores-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="model_scores.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-model_scores-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Model Training Scores
+</figcaption>
+</figure>
+</div>
+<div id="fig-decision_tree" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-decision_tree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="decision_tree.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-decision_tree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Decision Tree
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="key-indicators" class="level2">
+<h2 class="anchored" data-anchor-id="key-indicators">Key Indicators</h2>
+<p>The Decision Tree (<a href="#fig-decision_tree" class="quarto-xref">Figure&nbsp;2</a>) has identified that blood sugars levels as the most critical predictor of maternal health risks. Specifically, blood sugar (BS) with a threshold value of 7.95 mmol/L was the primary splitting point in the root node Decision Tree. The Decision tree also suggested that systolic (lower) blood pressure is a key indicator as it was used to refine the classification further on.</p>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+<p>Although the model performed well overall, it has limitations which require careful attention before the actual deployment in the clinical settings. Such limitations can be identified as:</p>
+<ul>
+<li><strong>Misclassifications:</strong> Some high-risk pregnancies were inccorectly categorised as low risk. This could have severe consequences in the real world scenarios.</li>
+<li><strong>Dataset Bias:</strong> The dataset has limited diversity which could introduce bias. It primarily includes data from the Pima Indians Diabetes Database, which may not generalize well to broader populations.</li>
+</ul>
+</section>
+</section>
+<section id="real-world-implications" class="level1">
+<h1>Real World Implications</h1>
+<section id="potential-impact" class="level2">
+<h2 class="anchored" data-anchor-id="potential-impact">Potential Impact</h2>
+<p>The ability to predict maternal health risks early can transform healthcare delivery in underserved communities. By having the ability to identify at risk pregnancies, healthcare professionals can prioritize resouces and provide timely interventions to the patients. This will be a vital change especially in rural areas where medical care is often scarce.</p>
+</section>
+<section id="challenges-in-deployment" class="level2">
+<h2 class="anchored" data-anchor-id="challenges-in-deployment">Challenges in Deployment</h2>
+<p>Data Diversity is one of the key challenges. Future work should involve training models on larger and more diverse datasets to ensure the models can generalise better. Secondly, ethical considerations should be taken seriously. Using machine learning in healthcare requires substantial careful consideration of faireness, accountability and transparency.</p>
+</section>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>Once again, data science has demostrated the potential in addressing critical maternal health challenges. This project highlights how predicitve models like Decision Tree, can identify key risk factors such as blood sugar and systolic (lower) blood pressure to guide healthcare decisions. However, it is important to note that further refinement and validation are necessary before deploying the model in the real world settings. Collaboration between data scientist and healthcare professionals is another key aspect to unlocking the full potential of data science. In a nutshell, by leveraging data driven insights, we have the potential to make a difference toward improving maternal healthcare and save lives.</p>
+</section>
+<section id="references" class="level1">
 
 
 
 
+</section>
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="news,code,analysis" data-listing-date-sort="1737100800000" data-listing-file-modified-sort="1737100918277" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
-<div class="thumbnail">
-<p><a href="./posts/post-with-code/index.html" class="no-external"></a></p><a href="./posts/post-with-code/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/post-with-code/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/post-with-code/index.html" class="no-external"></a></p>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Pima_indians_data" class="csl-entry" role="listitem">
+Brownlee, J. 2024. <span>“Pima Indians Diabetes Database.”</span> <a href="https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.names" class="uri">https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.names</a>.
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post-with-code/index.html" class="no-external">Post With Code</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post-with-code/index.html" class="no-external"></a>
+<div id="ref-maternal_death_causes" class="csl-entry" role="listitem">
+Say, L., D. Chou, A. Gemmill, Ö. Tunçalp, A. B. Moller, J. Daniels, A. M. Gülmezoglu, M. Temmerman, and L. Alkema. 2014. <span>“Global Causes of Maternal Death: A WHO Systematic Analysis.”</span> <em>Lancet Global Health</em> 2 (6): e323–33. <a href="https://doi.org/10.1016/S2214-109X(14)70227-X">https://doi.org/10.1016/S2214-109X(14)70227-X</a>.
 </div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/post-with-code/index.html" class="no-external">This is a post with executable code.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post-with-code/index.html" class="no-external">
-<div class="listing-date">
-Jan 17, 2025
-</div>
-<div class="listing-author">
-Harlow Malloc
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="news" data-listing-date-sort="1736841600000" data-listing-file-modified-sort="1737100918271" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
-<div class="thumbnail">
-<p><a href="./posts/welcome/index.html" class="no-external"></a></p><a href="./posts/welcome/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/welcome/thumbnail.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/welcome/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">Welcome To My Blog</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/welcome/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/welcome/index.html" class="no-external">This is the first post in a Quarto blog. Welcome!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-Jan 14, 2025
-</div>
-<div class="listing-author">
-Tristan O’Malley
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
