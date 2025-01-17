@@ -1,19 +1,22 @@
 ---
-title: "About"
+title: "Jia Quan Lim"
 image: profile.jpg
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: www.linkedin.com/in/jiaquanlim
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/JiaQuanLim
 
 ---
 
-About this blog
+Hello there, as an aspiring student currently pursuing my Master of Data Science at the University of British Columbia (UBC), I am passionate about exploring the immense power data holds to transform information into impactful solutions. Getting into this program is not just a step forward in my career and it’s one of my proudest goals for 2024 that represent my dedication to continuous learning and growth in this ever-evolving field.
+
+My academic journey began with a Bachelor's degree in Information Systems in Malaysia, where I gained a solid foundation in technology and analytics. Now at UBC, I'm building upon that knowledge with advanced data science skills to focus on practical applications that solve real-world problems.
+
+Beyond my technical expertise, I am known for being an effective communicator and a natural leader. I thrive on collaboration, leading projects, and fostering team success whenever the opportunity arises. I am also a good listener, as I believe it is one of the most important traits for truly understanding others’ perspectives and cultivate trust within teams.
+
+Outside of my professional pursuits, I balance my life with a love for badminton and hiking, activities that keep me energised and grounded. These hobbies not only fuel my sense of adventure but also sharpen my strategic thinking and resilience. 
