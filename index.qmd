@@ -16,7 +16,7 @@ format:
 Maternal health remains a critical global issue, especially in the rural and underserved areas where access to healthcare is limited.
 High maternal mortality rates are often the result of insufficient monitoring, lack of medical resources, and limited information about maternal care [@maternal_death_causes].
 With that said, by leveraging data science, we can identify health risks early during pregnancy which could potentially save the lives of mothers and their babies.
-This bllog dives into how the data driven methods can predict maternal health risks and highlight the key indicators to facilitate healthcare decisions. 
+This blog dives into how the data driven methods can predict maternal health risks and highlight the key indicators to facilitate healthcare decisions. 
 
 # Methods
 
