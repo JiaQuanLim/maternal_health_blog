@@ -6,7 +6,7 @@ about:
   links:
     - icon: linkedin
       text: LinkedIn
-      href: www.linkedin.com/in/jiaquanlim
+      href: https://www.linkedin.com/in/jiaquanlim/
     - icon: github
       text: Github
       href: https://github.com/JiaQuanLim
